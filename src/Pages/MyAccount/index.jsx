@@ -1,9 +1,11 @@
+import Layout from '../../Components/Layout/index'
+
 function MyAccount() {
 
   return (
-    <div className="bg-red-100">
-      Este es el Home
-    </div>
+    <Layout>
+      my account
+    </Layout>
   )
 }
 export default MyAccount

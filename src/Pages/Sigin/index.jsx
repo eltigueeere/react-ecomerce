@@ -1,9 +1,11 @@
+import Layout from "../../Components/Layout"
+
 function Sigin() {
 
   return (
-    <div className="bg-red-100">
-      Este es el Sigin
-    </div>
+    <Layout>
+      Siginj
+    </Layout>
   )
 }
 export default Sigin
