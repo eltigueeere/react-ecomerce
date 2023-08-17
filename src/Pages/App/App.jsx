@@ -1,5 +1,6 @@
 import {useRoutes, BrowserRouter} from 'react-router-dom'
 import './App.css'
+import { ShoppingCartProvider } from '../../Context'
 import Home from '../Home/index'
 import MyAccount from '../MyAccount/index'
 import MyOrder from '../MyOrder/index'
@@ -7,7 +8,6 @@ import MyOrders from '../MyOrders/index'
 import NotFound from '../NotFound/index'
 import Sigin from '../Sigin/index'
 import Navbar from '../../Components/Nabvar/index'
-import ShoppingCardContex from '../../Context/index'
 
 
 const AppRoutes = () => {
@@ -25,12 +25,12 @@ const AppRoutes = () => {
 function App() {
 
   return (
-    <ShoppingCardContex>
+    <ShoppingCartProvider>
       <BrowserRouter>
         <Navbar/>
         <AppRoutes/>
       </BrowserRouter>
-    </ShoppingCardContex>
+    </ShoppingCartProvider>
   )
 }
 
