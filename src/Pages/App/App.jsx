@@ -7,6 +7,8 @@ import MyOrders from '../MyOrders/index'
 import NotFound from '../NotFound/index'
 import Sigin from '../Sigin/index'
 import Navbar from '../../Components/Nabvar/index'
+import ShoppingCardContex from '../../Context/index'
+
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -23,10 +25,12 @@ const AppRoutes = () => {
 function App() {
 
   return (
-    <BrowserRouter>
-      <Navbar/>
-      <AppRoutes/>
-    </BrowserRouter>
+    <ShoppingCardContex>
+      <BrowserRouter>
+        <Navbar/>
+        <AppRoutes/>
+      </BrowserRouter>
+    </ShoppingCardContex>
   )
 }
 
